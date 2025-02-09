@@ -18,6 +18,8 @@
 		A34059232D31709B00C823BB /* AccessoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34059202D31709B00C823BB /* AccessoryListViewController.swift */; };
 		A34059262D31773A00C823BB /* LightbulbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34059252D31773A00C823BB /* LightbulbViewController.xib */; };
 		A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34059242D31773A00C823BB /* LightbulbViewController.swift */; };
+		D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */; };
+		D7329E6D2D5907F2007CF2A4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6C2D5907F2007CF2A4 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		A34059212D31709B00C823BB /* AccessoryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessoryListViewController.xib; sourceTree = "<group>"; };
 		A34059242D31773A00C823BB /* LightbulbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbViewController.swift; sourceTree = "<group>"; };
 		A34059252D31773A00C823BB /* LightbulbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightbulbViewController.xib; sourceTree = "<group>"; };
+		D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsListViewController.swift; sourceTree = "<group>"; };
+		D7329E6C2D5907F2007CF2A4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				A34059212D31709B00C823BB /* AccessoryListViewController.xib */,
 				A34059242D31773A00C823BB /* LightbulbViewController.swift */,
 				A34059252D31773A00C823BB /* LightbulbViewController.xib */,
+				D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */,
+				D7329E6C2D5907F2007CF2A4 /* DataSource.swift */,
 			);
 			path = MyHomeApp;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7329E6D2D5907F2007CF2A4 /* DataSource.swift in Sources */,
 				A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */,
+				D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */,
 				A340591F2D313FE900C823BB /* SearchAccessoryViewController.swift in Sources */,
 				A34059232D31709B00C823BB /* AccessoryListViewController.swift in Sources */,
 				A34059032D31391500C823BB /* AppDelegate.swift in Sources */,
