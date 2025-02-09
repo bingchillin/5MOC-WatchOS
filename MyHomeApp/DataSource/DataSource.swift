@@ -10,8 +10,11 @@ import Foundation
 import HomeKit
 
 struct HomeItem {
+    let id: UUID = UUID()
+    
     let name: String
     let source: DataSourceType
+    var isFavorite: Bool
     let home: HMHome?
     
     enum DataSourceType {

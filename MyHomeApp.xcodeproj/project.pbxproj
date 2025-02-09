@@ -20,6 +20,7 @@
 		A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34059242D31773A00C823BB /* LightbulbViewController.swift */; };
 		D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */; };
 		D7329E6D2D5907F2007CF2A4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6C2D5907F2007CF2A4 /* DataSource.swift */; };
+		D7329E712D590D00007CF2A4 /* ObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A34059252D31773A00C823BB /* LightbulbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightbulbViewController.xib; sourceTree = "<group>"; };
 		D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsListViewController.swift; sourceTree = "<group>"; };
 		D7329E6C2D5907F2007CF2A4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,8 @@
 		A34059012D31391500C823BB /* MyHomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7329E6F2D590CF0007CF2A4 /* ObjectsList */,
+				D7329E6E2D590CDE007CF2A4 /* DataSource */,
 				A34059162D31393E00C823BB /* MyHomeApp.entitlements */,
 				A34059022D31391500C823BB /* AppDelegate.swift */,
 				A34059172D313DF100C823BB /* HomeViewController.swift */,
@@ -84,10 +88,25 @@
 				A34059212D31709B00C823BB /* AccessoryListViewController.xib */,
 				A34059242D31773A00C823BB /* LightbulbViewController.swift */,
 				A34059252D31773A00C823BB /* LightbulbViewController.xib */,
-				D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */,
-				D7329E6C2D5907F2007CF2A4 /* DataSource.swift */,
 			);
 			path = MyHomeApp;
+			sourceTree = "<group>";
+		};
+		D7329E6E2D590CDE007CF2A4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D7329E6C2D5907F2007CF2A4 /* DataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D7329E6F2D590CF0007CF2A4 /* ObjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */,
+				D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */,
+			);
+			path = ObjectsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +189,7 @@
 				A340591F2D313FE900C823BB /* SearchAccessoryViewController.swift in Sources */,
 				A34059232D31709B00C823BB /* AccessoryListViewController.swift in Sources */,
 				A34059032D31391500C823BB /* AppDelegate.swift in Sources */,
+				D7329E712D590D00007CF2A4 /* ObjectTableViewCell.swift in Sources */,
 				A340591A2D313DF100C823BB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
