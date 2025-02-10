@@ -13,8 +13,8 @@ class ObjectsListViewController: UIViewController {
     
     // Sources de données
     private var staticHomeItems: [HomeItem] = [
-        HomeItem(name: "Maison Statique 1", source: .staticData, isFavorite: false, home: nil),
-        HomeItem(name: "Maison Statique 2", source: .staticData, isFavorite: false, home: nil)
+        HomeItem(name: "Maison Statique 1", source: .staticData, isFavorite: false, home: nil, pressure: 0, isAlarmOn: false),
+        HomeItem(name: "Maison Statique 2", source: .staticData, isFavorite: false, home: nil, pressure: 0, isAlarmOn: false)
     ]
     
     private var homeKitHomeItems: [HomeItem] = []
@@ -72,6 +72,13 @@ class ObjectsListViewController: UIViewController {
         homeManager?.delegate = self
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Recharge la table view pour refléter les modifications faites dans le détail
+        tableView.reloadData()
+    }
+    
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             // La table view occupe toute la vue
@@ -117,9 +124,11 @@ extension ObjectsListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Récupérer l'élément sélectionné (par exemple, à partir de votre propriété allHomeItems)
         let selectedItem = allHomeItems[indexPath.row]
-        print("Sélection de l'objet : \(selectedItem.name) (Source: \(selectedItem.source))")
-        tableView.deselectRow(at: indexPath, animated: true)
+        let detailsVC = ObjectDetailsViewController()
+        detailsVC.homeItem = selectedItem
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
 }
 
@@ -148,7 +157,7 @@ extension ObjectsListViewController: HMHomeManagerDelegate {
         // Mise à jour des données HomeKit
         homeKitHomeItems = manager.homes.map { home in
             // Par défaut, on initialise isFavorite à false.
-            return HomeItem(name: home.name, source: .homeKit, isFavorite: false, home: home)
+            return HomeItem(name: home.name, source: .homeKit, isFavorite: false, home: home, pressure: 0, isAlarmOn: false)
         }
         updateUI()
     }

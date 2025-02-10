@@ -19,8 +19,9 @@
 		A34059262D31773A00C823BB /* LightbulbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34059252D31773A00C823BB /* LightbulbViewController.xib */; };
 		A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34059242D31773A00C823BB /* LightbulbViewController.swift */; };
 		D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */; };
-		D7329E6D2D5907F2007CF2A4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6C2D5907F2007CF2A4 /* DataSource.swift */; };
+		D7329E6D2D5907F2007CF2A4 /* DataSourceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6C2D5907F2007CF2A4 /* DataSourceClass.swift */; };
 		D7329E712D590D00007CF2A4 /* ObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */; };
+		D7329E742D596FB4007CF2A4 /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E732D596FB4007CF2A4 /* ObjectDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +40,9 @@
 		A34059242D31773A00C823BB /* LightbulbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbViewController.swift; sourceTree = "<group>"; };
 		A34059252D31773A00C823BB /* LightbulbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightbulbViewController.xib; sourceTree = "<group>"; };
 		D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsListViewController.swift; sourceTree = "<group>"; };
-		D7329E6C2D5907F2007CF2A4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		D7329E6C2D5907F2007CF2A4 /* DataSourceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceClass.swift; sourceTree = "<group>"; };
 		D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTableViewCell.swift; sourceTree = "<group>"; };
+		D7329E732D596FB4007CF2A4 /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 		D7329E6E2D590CDE007CF2A4 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				D7329E6C2D5907F2007CF2A4 /* DataSource.swift */,
+				D7329E6C2D5907F2007CF2A4 /* DataSourceClass.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -103,10 +105,19 @@
 		D7329E6F2D590CF0007CF2A4 /* ObjectsList */ = {
 			isa = PBXGroup;
 			children = (
+				D7329E722D596F9C007CF2A4 /* ObjectDetailsViewController */,
 				D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */,
 				D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */,
 			);
 			path = ObjectsList;
+			sourceTree = "<group>";
+		};
+		D7329E722D596F9C007CF2A4 /* ObjectDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7329E732D596FB4007CF2A4 /* ObjectDetailsViewController.swift */,
+			);
+			path = ObjectDetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7329E6D2D5907F2007CF2A4 /* DataSource.swift in Sources */,
+				D7329E742D596FB4007CF2A4 /* ObjectDetailsViewController.swift in Sources */,
+				D7329E6D2D5907F2007CF2A4 /* DataSourceClass.swift in Sources */,
 				A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */,
 				D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */,
 				A340591F2D313FE900C823BB /* SearchAccessoryViewController.swift in Sources */,
