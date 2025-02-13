@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="MyHomeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="alarm_button" destination="kIb-x4-YB6" id="SJI-ag-W19"/>
+                <outlet property="label_intrusion" destination="84O-7e-8pw" id="6eU-5r-UD9"/>
+                <outlet property="label_presence" destination="FxD-6c-399" id="KQZ-1C-ivX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-bR-u5k">
+                    <rect key="frame" x="0.0" y="79" width="393" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Km1-4z-i26">
+                    <rect key="frame" x="0.0" y="191" width="393" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intrusion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-oc-laK">
+                    <rect key="frame" x="0.0" y="319.66666666666669" width="393" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxD-6c-399">
+                    <rect key="frame" x="0.0" y="247" width="393" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-x4-YB6">
+                    <rect key="frame" x="87" y="572.33333333333337" width="217" height="153.66666666666663"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="ON">
+                        <backgroundConfiguration key="background" cornerRadius="109" strokeWidth="2" strokeOutset="2">
+                            <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="handle_OnOff:" destination="-1" eventType="touchUpInside" id="oqb-VY-ntK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84O-7e-8pw">
+                    <rect key="frame" x="0.0" y="364.66666666666669" width="393" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VRm-oc-laK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4JX-4c-73V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kIb-x4-YB6" secondAttribute="bottom" constant="92.000000000144951" id="512-uk-IOS"/>
+                <constraint firstItem="84O-7e-8pw" firstAttribute="top" secondItem="VRm-oc-laK" secondAttribute="bottom" constant="8" symbolic="YES" id="5lr-wl-T3h"/>
+                <constraint firstItem="Km1-4z-i26" firstAttribute="top" secondItem="aAw-bR-u5k" secondAttribute="bottom" constant="65" id="AZB-wl-xhY"/>
+                <constraint firstItem="aAw-bR-u5k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="FCh-q0-AP0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Km1-4z-i26" secondAttribute="trailing" id="Mm5-ak-WuB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FxD-6c-399" secondAttribute="trailing" id="P4j-O4-9am"/>
+                <constraint firstItem="FxD-6c-399" firstAttribute="top" secondItem="Km1-4z-i26" secondAttribute="bottom" constant="19" id="Yqa-EX-SJc"/>
+                <constraint firstItem="FxD-6c-399" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZIM-li-Ar6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kIb-x4-YB6" secondAttribute="trailing" constant="89.138622245394686" id="ZT8-23-9tu"/>
+                <constraint firstItem="kIb-x4-YB6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="86.861377754645105" id="avP-ke-Uqr"/>
+                <constraint firstItem="aAw-bR-u5k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fuP-RB-Vvq"/>
+                <constraint firstItem="kIb-x4-YB6" firstAttribute="top" secondItem="84O-7e-8pw" secondAttribute="bottom" constant="175.66666666655016" id="jbb-aI-Znx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aAw-bR-u5k" secondAttribute="trailing" id="jll-5Y-7sS"/>
+                <constraint firstItem="Km1-4z-i26" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k6n-x0-2wQ"/>
+                <constraint firstItem="84O-7e-8pw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sXt-cP-VVH"/>
+                <constraint firstItem="VRm-oc-laK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="wXZ-Zj-kQs"/>
+                <constraint firstItem="84O-7e-8pw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x3i-Lo-Gkp"/>
+                <constraint firstItem="VRm-oc-laK" firstAttribute="top" secondItem="FxD-6c-399" secondAttribute="bottom" constant="40.666666666666629" id="zpd-hq-Gdz"/>
+            </constraints>
+            <point key="canvasLocation" x="122.90076335877862" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

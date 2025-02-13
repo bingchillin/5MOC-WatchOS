@@ -18,6 +18,14 @@
 		A34059232D31709B00C823BB /* AccessoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34059202D31709B00C823BB /* AccessoryListViewController.swift */; };
 		A34059262D31773A00C823BB /* LightbulbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34059252D31773A00C823BB /* LightbulbViewController.xib */; };
 		A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34059242D31773A00C823BB /* LightbulbViewController.swift */; };
+		C0BA46B72D5D593F003E686E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA46B52D5D593F003E686E /* DetailsViewController.swift */; };
+		C0BA46B82D5D593F003E686E /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BA46B62D5D593F003E686E /* DetailsViewController.xib */; };
+		C0BA46BB2D5D59DF003E686E /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA46BA2D5D59DF003E686E /* Object.swift */; };
+		C0BA46BD2D5D5A42003E686E /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA46BC2D5D5A42003E686E /* Component.swift */; };
+		C0BA46C02D5D6419003E686E /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA46BF2D5D6419003E686E /* DataObject.swift */; };
+		C0BA46C32D5D7CB3003E686E /* ObjectServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA46C22D5D7CB3003E686E /* ObjectServices.swift */; };
+		C0BA46C72D5D91B5003E686E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA46C52D5D91B5003E686E /* SettingsViewController.swift */; };
+		C0BA46C82D5D91B5003E686E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BA46C62D5D91B5003E686E /* SettingsViewController.xib */; };
 		D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */; };
 		D7329E6D2D5907F2007CF2A4 /* DataSourceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E6C2D5907F2007CF2A4 /* DataSourceClass.swift */; };
 		D7329E712D590D00007CF2A4 /* ObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */; };
@@ -39,6 +47,14 @@
 		A34059212D31709B00C823BB /* AccessoryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessoryListViewController.xib; sourceTree = "<group>"; };
 		A34059242D31773A00C823BB /* LightbulbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbViewController.swift; sourceTree = "<group>"; };
 		A34059252D31773A00C823BB /* LightbulbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightbulbViewController.xib; sourceTree = "<group>"; };
+		C0BA46B52D5D593F003E686E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C0BA46B62D5D593F003E686E /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		C0BA46BA2D5D59DF003E686E /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		C0BA46BC2D5D5A42003E686E /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		C0BA46BF2D5D6419003E686E /* DataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		C0BA46C22D5D7CB3003E686E /* ObjectServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectServices.swift; sourceTree = "<group>"; };
+		C0BA46C52D5D91B5003E686E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C0BA46C62D5D91B5003E686E /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		D7329E6A2D59057C007CF2A4 /* ObjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsListViewController.swift; sourceTree = "<group>"; };
 		D7329E6C2D5907F2007CF2A4 /* DataSourceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceClass.swift; sourceTree = "<group>"; };
 		D7329E702D590D00007CF2A4 /* ObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,15 +91,30 @@
 		A34059012D31391500C823BB /* MyHomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0BA46C12D5D7C2C003E686E /* Services */,
+				C0BA46BE2D5D63FB003E686E /* Stockage */,
+				C0BA46B92D5D59D3003E686E /* Models */,
+				C0BA46B42D5D58FA003E686E /* OldApp */,
 				D7329E6F2D590CF0007CF2A4 /* ObjectsList */,
 				D7329E6E2D590CDE007CF2A4 /* DataSource */,
 				A34059162D31393E00C823BB /* MyHomeApp.entitlements */,
 				A34059022D31391500C823BB /* AppDelegate.swift */,
-				A34059172D313DF100C823BB /* HomeViewController.swift */,
-				A34059182D313DF100C823BB /* HomeViewController.xib */,
+				C0BA46B52D5D593F003E686E /* DetailsViewController.swift */,
+				C0BA46B62D5D593F003E686E /* DetailsViewController.xib */,
 				A340590B2D31391800C823BB /* Assets.xcassets */,
 				A340590D2D31391800C823BB /* LaunchScreen.storyboard */,
 				A34059102D31391800C823BB /* Info.plist */,
+				C0BA46C52D5D91B5003E686E /* SettingsViewController.swift */,
+				C0BA46C62D5D91B5003E686E /* SettingsViewController.xib */,
+			);
+			path = MyHomeApp;
+			sourceTree = "<group>";
+		};
+		C0BA46B42D5D58FA003E686E /* OldApp */ = {
+			isa = PBXGroup;
+			children = (
+				A34059172D313DF100C823BB /* HomeViewController.swift */,
+				A34059182D313DF100C823BB /* HomeViewController.xib */,
 				A340591C2D313FE900C823BB /* SearchAccessoryViewController.swift */,
 				A340591D2D313FE900C823BB /* SearchAccessoryViewController.xib */,
 				A34059202D31709B00C823BB /* AccessoryListViewController.swift */,
@@ -91,7 +122,32 @@
 				A34059242D31773A00C823BB /* LightbulbViewController.swift */,
 				A34059252D31773A00C823BB /* LightbulbViewController.xib */,
 			);
-			path = MyHomeApp;
+			path = OldApp;
+			sourceTree = "<group>";
+		};
+		C0BA46B92D5D59D3003E686E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA46BA2D5D59DF003E686E /* Object.swift */,
+				C0BA46BC2D5D5A42003E686E /* Component.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0BA46BE2D5D63FB003E686E /* Stockage */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA46BF2D5D6419003E686E /* DataObject.swift */,
+			);
+			path = Stockage;
+			sourceTree = "<group>";
+		};
+		C0BA46C12D5D7C2C003E686E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA46C22D5D7CB3003E686E /* ObjectServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D7329E6E2D590CDE007CF2A4 /* DataSource */ = {
@@ -178,8 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BA46B82D5D593F003E686E /* DetailsViewController.xib in Resources */,
 				A34059262D31773A00C823BB /* LightbulbViewController.xib in Resources */,
 				A340590C2D31391800C823BB /* Assets.xcassets in Resources */,
+				C0BA46C82D5D91B5003E686E /* SettingsViewController.xib in Resources */,
 				A34059222D31709B00C823BB /* AccessoryListViewController.xib in Resources */,
 				A340591E2D313FE900C823BB /* SearchAccessoryViewController.xib in Resources */,
 				A340590F2D31391800C823BB /* Base in Resources */,
@@ -194,15 +252,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BA46C02D5D6419003E686E /* DataObject.swift in Sources */,
 				D7329E742D596FB4007CF2A4 /* ObjectDetailsViewController.swift in Sources */,
+				C0BA46BD2D5D5A42003E686E /* Component.swift in Sources */,
 				D7329E6D2D5907F2007CF2A4 /* DataSourceClass.swift in Sources */,
 				A34059272D31773A00C823BB /* LightbulbViewController.swift in Sources */,
 				D7329E6B2D59057C007CF2A4 /* ObjectsListViewController.swift in Sources */,
 				A340591F2D313FE900C823BB /* SearchAccessoryViewController.swift in Sources */,
 				A34059232D31709B00C823BB /* AccessoryListViewController.swift in Sources */,
+				C0BA46C72D5D91B5003E686E /* SettingsViewController.swift in Sources */,
+				C0BA46BB2D5D59DF003E686E /* Object.swift in Sources */,
 				A34059032D31391500C823BB /* AppDelegate.swift in Sources */,
 				D7329E712D590D00007CF2A4 /* ObjectTableViewCell.swift in Sources */,
 				A340591A2D313DF100C823BB /* HomeViewController.swift in Sources */,
+				C0BA46C32D5D7CB3003E686E /* ObjectServices.swift in Sources */,
+				C0BA46B72D5D593F003E686E /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +411,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyHomeApp/MyHomeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DKNVBLL9J5;
+				DEVELOPMENT_TEAM = 69QSGVHF8Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHomeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,7 +440,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyHomeApp/MyHomeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DKNVBLL9J5;
+				DEVELOPMENT_TEAM = 69QSGVHF8Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHomeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

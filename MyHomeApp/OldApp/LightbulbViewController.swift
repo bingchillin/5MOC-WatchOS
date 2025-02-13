@@ -1,9 +1,3 @@
-//
-//  LightbulbViewController.swift
-//  MyHomeApp
-//
-//  Created by Benoit Briatte on 10/01/2025.
-//
 
 import UIKit
 import HomeKit

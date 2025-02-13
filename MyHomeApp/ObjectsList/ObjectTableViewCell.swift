@@ -1,9 +1,4 @@
-//
-//  ObjectTableViewCell.swift
-//  MyHomeApp
-//
-//  Created by Mohamed El Fakharany on 09/02/2025.
-//
+
 
 import Foundation
 import UIKit
